@@ -14,6 +14,7 @@ import com.example.application_ostrovskogo.API.APIService;
 import com.example.application_ostrovskogo.model.LoginResponse;
 import com.example.application_ostrovskogo.model.RegistrationRequest;
 import com.example.application_ostrovskogo.model.RegistrationResponse;
+import com.google.gson.Gson;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -25,15 +26,10 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-<<<<<<< HEAD
-=======
-
->>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
         final EditText email = findViewById(R.id.email);
         final EditText name = findViewById(R.id.name);
         final EditText password = findViewById(R.id.password);
         final EditText confirmPassword = findViewById(R.id.confirmPassword);
-<<<<<<< HEAD
 
         Button okBtn = findViewById(R.id.addBtn);
         okBtn.setOnClickListener(new View.OnClickListener() {
@@ -75,68 +71,12 @@ public class RegisterActivity extends AppCompatActivity {
         alert.setPositiveButton("ЯСНО", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {}//вызов окна про нажатии на кнопку "ЯСНО
-=======
-        Button addBtn = findViewById(R.id.addBtn);
-        addBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                String error = "";
-                if (email.getText().toString().equals("")){
-                    error += "укажите email \n";
-                }
-                if (name.getText().toString().equals("")){
-                    error += "укажите имя \n";
-                }
-                if (password.getText().toString().equals("")){
-                    error += "укажите пароль \n";
-                }
-
-                if (confirmPassword.getText().toString().equals("")){
-                    error += "Подтвердите пароль \n";
-                }
-
-                if(!password.getText().toString().equals("") && !confirmPassword.getText().toString().equals("")){
-                   if(!password.getText().toString().equals(confirmPassword.getText().toString())){
-                       error += "Пароли должны совпадать";
-                   }
-                }
-
-                if(!error.equals("")){
-                    showError(error);
-                    return;
-                }
-                registerUser(name.getText().toString(), email.getText().toString(), password.getText().toString());
-            }
-
-        });
-    }
-
-    public  void  showConfirmActivity(){
-        Intent i = new Intent (this, ConfirnActivity.class);
-        startActivity(i);
-    }
-
-
-    public void showError(String error){
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setMessage(error);
-        alert.setTitle("Ошибка");
-        alert.setCancelable(true);
-        alert.setPositiveButton("ЯСНО", new DialogInterface.OnClickListener(){
-            @Override
-            public void onClick (DialogInterface dialog, int which) {}//вызов окна про нажатии на кнопку "ЯСНО)
->>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
         });
         alert.setIcon(R.drawable.ic_launcher_background);//вывод иконки
         alert.create();//создает объект alert dialog
         alert.show();
     }
-<<<<<<< HEAD
     public void registerUser(String name,String email,String password){
-=======
-
-    public void registerUser(String name, String email, String password){
->>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
         RegistrationRequest r = new RegistrationRequest();
         r.email = email;
         r.password = password;
@@ -148,14 +88,16 @@ public class RegisterActivity extends AppCompatActivity {
                 .enqueue(new Callback<RegistrationResponse>() {
                     @Override
                     public void onResponse(Call<RegistrationResponse> call, Response<RegistrationResponse> response) {
-                        RegistrationResponse resp = response.body();
+                        RegistrationResponse resp = null;
+                        if(!response.isSuccessful()){
+                            Gson g = new Gson();
+                            resp = g.fromJson(
+                                    response.errorBody().charStream(),RegistrationResponse.class);
+                        }else{
+                               resp =  response.body();}
                         if (!resp.result) {
                             showError(resp.error);
-<<<<<<< HEAD
                         }else {
-=======
-                        } else {
->>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
                             showConfirmActivity();
                         }
                     }
@@ -164,7 +106,6 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onFailure(Call<RegistrationResponse> call, Throwable t) {
                         showError(t.getMessage());
                     }
-<<<<<<< HEAD
                 });
 
     }
@@ -173,8 +114,3 @@ public class RegisterActivity extends AppCompatActivity {
         startActivity(i);
     }
 }
-=======
-                }
-    }
-
->>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8

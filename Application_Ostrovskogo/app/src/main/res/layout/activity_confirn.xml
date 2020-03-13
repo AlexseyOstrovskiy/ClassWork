@@ -7,40 +7,28 @@
     android:background="@drawable/back"
     tools:context=".ConfirnActivity">
 
-    <EditText
-<<<<<<< HEAD
-        android:id="@+id/code"
-=======
-        android:id="@+id/editText"
->>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
-        android:layout_width="223dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-<<<<<<< HEAD
-        android:text="code"
-=======
-        android:text="Name"
->>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
-        android:textColor="#FFEB3B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="223dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="code"
+            android:textColor="#FFEB3B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/confirnBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#8FFFEB3B"
-        android:text="ok"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-<<<<<<< HEAD
-        app:layout_constraintTop_toBottomOf="@+id/code"
-=======
-        app:layout_constraintTop_toBottomOf="@+id/editText"
->>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
-        app:layout_constraintVertical_bias="0.182" />
+        <Button
+            android:id="@+id/confirnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8FFFEB3B"
+            android:text="ok"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/code"
+            app:layout_constraintVertical_bias="0.182" />
 </androidx.constraintlayout.widget.ConstraintLayout>
