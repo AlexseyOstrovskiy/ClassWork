@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signupBtn"
+        android:layout_width="140dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="124dp"
+        android:background="#8503A9F4"
+        android:text="        Регистрация."
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFEB3B"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="138dp"
+        android:layout_height="35dp"
+        android:background="#8B03A9F4"
+        android:text="    Забыли пароль???"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="103dp"
+        android:layout_height="59dp"
+        android:background="#7203A9F4"
+        android:text="Войти"
+        android:textColor="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="222dp"
+        android:layout_height="47dp"
+        android:background="#AD03A9F4"
+        android:ems="10"
+        android:hint="        Введите логин."
+        android:inputType="textEmailAddress"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="228dp"
+        android:layout_height="53dp"
+        android:background="#8303D0F4"
+        android:ems="10"
+        android:hint="         Введите пароль."
+        android:inputType="textPassword"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_width="345dp"
+        android:layout_height="56dp"
+        android:background="#05FD0202"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:visibility="invisible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

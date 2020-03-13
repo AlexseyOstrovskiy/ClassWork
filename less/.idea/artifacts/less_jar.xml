@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="less:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/less_jar</output-path>
+    <root id="archive" name="less.jar">
+      <element id="module-output" name="less" />
+    </root>
+  </artifact>
+</component>
