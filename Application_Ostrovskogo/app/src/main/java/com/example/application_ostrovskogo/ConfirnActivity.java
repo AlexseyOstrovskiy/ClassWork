@@ -1,5 +1,6 @@
 package com.example.application_ostrovskogo;
 
+<<<<<<< HEAD
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,12 +18,20 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+=======
+import android.os.Bundle;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+>>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
 public class ConfirnActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirn);
+<<<<<<< HEAD
         final EditText code = findViewById(R.id.code);
         Button confirmBtn = findViewById(R.id.confirnBtn);
         confirmBtn.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +87,11 @@ public class ConfirnActivity extends AppCompatActivity {
     public void showMenuActivity(){
         Intent i = new Intent(this,MenuActivity.class);
         startActivity(i);
+=======
+        final.EditTex code = findViewById(R.id.code);
+        Button ConfirmBtn  = findViewById(R.id.confirnBtn);
+        // zdesssssssssssssssss
+>>>>>>> 39ddb3eeba596875ef08a37e2d72120f170a31e8
 
     }
 }
