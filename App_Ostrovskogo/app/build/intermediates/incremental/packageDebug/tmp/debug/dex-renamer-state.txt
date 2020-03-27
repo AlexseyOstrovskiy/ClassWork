@@ -1,0 +1,4 @@
+#Fri Mar 27 20:04:25 MSK 2020
+base.0=D\:\\Ostrovskij_A_V\\ClassWork\\App_Ostrovskogo\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

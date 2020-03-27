@@ -19,7 +19,7 @@ public class Dialog {
             public void onClick(DialogInterface dialog, int which) {
             }
         });
-        alert.setIcon(R.drawable.kotface);// добавляем картинку к диалоговому окну
+       // alert.setIcon(R.drawable.kotface);// добавляем картинку к диалоговому окну
         alert.create().show();
     }
 
