@@ -1,0 +1,42 @@
+/*#previewVideo{
+    height: auto;
+    width: auto;
+    background: blue;
+    
+}
+#nameVideo{
+    background: chartreuse;
+}
+#timeVideo{
+    background: cornflowerblue;
+}
+.contCard{background: greenyellow;
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}*/
+
+
+/*Всплывающее окно*/
+#secondWindow{
+    background-color: blueviolet;
+    height: 95%;
+    width: 100%;
+   display: none;
+   position: fixed;
+}
+
+#videoPlayer{
+    background-color: aqua;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
