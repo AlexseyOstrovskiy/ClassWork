@@ -4,4 +4,4 @@ Welcome to Online Shop!
 <input type="text" id="fname" name="fname" >
 <br>
 <br>
-<button>Enter</button>
+<button  style="text-align:center">Enter</button>
