@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>
-    Welcome to Online Shop!
+    Welcome!
     <h1>
     <input type="text" id="fname" name="fname" >
     <br>
