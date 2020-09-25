@@ -9,6 +9,13 @@
     <url>http://maven.apache.org</url>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.3.160</version>
+        </dependency>
+
         <!-- Servlet API 4.0 for tomcat 9 -->
         <dependency>
             <groupId>javax.servlet</groupId>

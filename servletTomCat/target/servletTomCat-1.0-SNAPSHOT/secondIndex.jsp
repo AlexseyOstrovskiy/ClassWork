@@ -12,7 +12,7 @@
     <br>
     <p>Make you order</p>
 
-   <p><select size="3" multiple name="hero[]">
+   <p><select size="3" multiple name="hero">
        <option disabled>Выберите героя</option>
        <option value="Чебурашка">Чебурашка</option>
        <option selected value="Крокодил Гена">Крокодил Гена</option>
