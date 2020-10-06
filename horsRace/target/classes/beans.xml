@@ -35,7 +35,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 <!--    <bean id="rider2" class="main.java.Rider.java">-->
 <!--        <property name="name" value="Banksy"/>-->
 <!--        <property name="age" value="25"/>-->
-<!--        <property name="horse" ref="horse2"/>-->
+<!--        <property name="horse" value="horse2"/>-->
 <!--    </bean>-->
 
 <!--    <bean id="rider3" class="main.java.Rider.java">-->

@@ -1,3 +1,5 @@
+package com;
+
 public class Horse {
     private int age;
     private  String color;
@@ -25,5 +27,14 @@ public class Horse {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Horse{" +
+                "age=" + age +
+                ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

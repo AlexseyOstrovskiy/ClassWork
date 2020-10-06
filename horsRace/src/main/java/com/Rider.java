@@ -1,3 +1,5 @@
+package com;
+
 public class Rider {
     private String name;
     private  int age;
