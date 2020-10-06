@@ -14,9 +14,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <bean id="orderRepository" class="com.mmalaenko.repository.impl.OrderRepositoryImpl">
     </bean>
-    //bueldang - spring-web-contex
-    раздел 2.5
-    добавить зависимость spring web
+
 
 
 </beans>
