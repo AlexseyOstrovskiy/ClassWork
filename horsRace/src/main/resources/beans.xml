@@ -14,34 +14,36 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
         <property name="color" value="black"/>
     </bean>
 
-<!--    <bean id="horse2" class="main.java.Horse.java">-->
-<!--        <property name="name" value="Cady"/>-->
-<!--        <property name="age" value="3"/>-->
-<!--        <property name="color" value="white"/>-->
-<!--    </bean>-->
+    <bean id="horse2" class="com.Horse">
+        <property name="name" value="Cady"/>
+        <property name="age" value="3"/>
+        <property name="color" value="white"/>
+    </bean>
 
-<!--    <bean id="horse3" class="main.java.Horse.java">-->
-<!--        <property name="name" value="Doraty"/>-->
-<!--        <property name="age" value="1"/>-->
-<!--        <property name="color" value="brown"/>-->
-<!--    </bean>-->
+    <bean id="horse3" class="com.Horse">
+        <property name="name" value="Doraty"/>
+        <property name="age" value="1"/>
+        <property name="color" value="brown"/>
+    </bean>
 
-<!--    <bean id="rider1" class="main.java.Rider.java">-->
-<!--        <property name="name" value="JD"/>-->
-<!--        <property name="age" value="22"/>-->
-<!--        <property name="horse" value="horse1"/>-->
-<!--    </bean>-->
+    <bean id="rider1" class="com.Rider">
+        <property name="name" value="JD"/>
+        <property name="age" value="22"/>
+        <property name="horse" ref="horse1"/>
 
-<!--    <bean id="rider2" class="main.java.Rider.java">-->
-<!--        <property name="name" value="Banksy"/>-->
-<!--        <property name="age" value="25"/>-->
-<!--        <property name="horse" ref="horse2"/>-->
-<!--    </bean>-->
+    </bean>
 
-<!--    <bean id="rider3" class="main.java.Rider.java">-->
-<!--        <property name="name" value="Dexter"/>-->
-<!--        <property name="age" value="25"/>-->
-<!--        <property name="horse" value="horse3"/>-->
-<!--    </bean>-->
+    <bean id="rider2" class="com.Rider">
+        <property name="name" value="Banksy"/>
+        <property name="age" value="25"/>
+        <property name="horse" ref="horse2"/>
+    </bean>
 
+    <bean id="rider3" class="com.Rider">
+        <property name="name" value="Dexter"/>
+        <property name="age" value="25"/>
+        <property name="horse" ref="horse3"/>
+    </bean>
+
+  <bean id="trackManager" class="com.TrackManager"></bean>
 </beans>

@@ -3,7 +3,7 @@ package com;
 public class Rider {
     private String name;
     private  int age;
-    private String horseName;
+    private Object horse;
 
 
     public String getName() {
@@ -22,11 +22,11 @@ public class Rider {
         this.age = age;
     }
 
-    public String getHorseName() {
-        return horseName;
+    public Object getHorse() {
+        return horse;
     }
 
-    public void setHorseName(String horseName) {
-        this.horseName = horseName;
+    public void setHorse(Object horse) {
+        this.horse = horse;
     }
 }
