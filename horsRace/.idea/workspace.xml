@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d4ffe08-f99b-4e72-a5af-2c6bce796f70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../1/Новый текстовый документ.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Rider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Rider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/TrackManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/TrackManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/horsRace.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Rider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Rider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Track.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,21 +93,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1602188667095" />
-    <state width="1323" height="144" key="GridCell.Tab.0.bottom" timestamp="1602191091253">
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1602243367867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="144" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602191091253" />
-    <state width="1323" height="144" key="GridCell.Tab.0.center" timestamp="1602191091252">
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1602243367867" />
+    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1602243367867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="144" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602191091252" />
-    <state width="1323" height="144" key="GridCell.Tab.0.left" timestamp="1602191091252">
+    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1602243367867" />
+    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1602243367866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="144" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602191091252" />
-    <state width="1323" height="144" key="GridCell.Tab.0.right" timestamp="1602191091252">
+    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1602243367866" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1602243367867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="144" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602191091252" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1602243367867" />
   </component>
 </project>
