@@ -4,7 +4,7 @@ import com.mmalaenko.utill.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class SpringContex {
-    public static AnnotationConfigApplicationContext getApplicationComtext(){
+    public static AnnotationConfigApplicationContext getApplicationContext(){
         return applicationContext;
     }
 

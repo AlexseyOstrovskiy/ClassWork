@@ -3,13 +3,8 @@ package com.mmalaenko.servlet;
 import com.mmalaenko.model.Order;
 import com.mmalaenko.model.Product;
 import com.mmalaenko.model.User;
-import com.mmalaenko.repository.impl.OrderGoodRepositoryImpl;
-import com.mmalaenko.repository.impl.OrderRepositoryImpl;
-import com.mmalaenko.repository.impl.ProductRepositoryImpl;
-import com.mmalaenko.repository.impl.UserRepositoryImpl;
 import com.mmalaenko.service.OrderGoodService;
 import com.mmalaenko.service.OrderService;
-import com.mmalaenko.service.ProductService;
 import com.mmalaenko.service.UserService;
 import com.mmalaenko.service.impl.*;
 import lombok.extern.slf4j.Slf4j;
@@ -42,10 +37,10 @@ public class CartServlet extends HttpServlet {
 //        //productService= new ProductServiceImpl(new ProductRepositoryImpl());
 //        orderService = new OrderServiceImpl(new OrderRepositoryImpl());
 //        orderGoodService = new OrderGoodServiceImpl(new OrderGoodRepositoryImpl());
-        AnnotationConfigApplicationContext context = SpringContex.getApplicationComtext();
-        this.orderGoodService = (OrderGoodService) context.getBean("orderGoodService");
-        this.orderService = (OrderService) context.getBean("orderServisce");
-        this.userService = (UserService) context.getBean("UserService");
+        AnnotationConfigApplicationContext context = SpringContex.getApplicationContext();
+        this.orderGoodService = (OrderGoodService) context.getBean(OrderGoodServiceImpl.class);
+        this.orderService = (OrderService) context.getBean(OrderServiceImpl.class);
+        this.userService = (UserService) context.getBean(UserServiceImpl.class);
     }
 
     @Override
