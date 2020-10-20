@@ -26,6 +26,7 @@ com\mmalaenko\model\OrderGood$OrderGoodBuilder.class
 com\mmalaenko\repository\OrderRepository.class
 com\mmalaenko\repository\impl\ProductRepositoryImpl.class
 com\mmalaenko\repository\UserRepository.class
+com\mmalaenko\mvcConfig\WebConfig.class
 com\mmalaenko\service\impl\ProductServiceImpl.class
 com\mmalaenko\utill\AppConfig.class
 com\mmalaenko\model\Order.class

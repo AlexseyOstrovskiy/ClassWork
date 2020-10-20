@@ -15,7 +15,6 @@ import java.sql.SQLException;
 public class OrderGoodRepositoryImpl implements OrderGoodRepository {
 
     public static final String SQL_INSERT_ORDER_GOOD = "INSERT INTO order_good(orderID,productID) VALUES(?,?)";
-   // @Autowired
     @Override
     public void save(int orderID, int productID) {
         try(Connection connection= DBConnector.getConnection()){
