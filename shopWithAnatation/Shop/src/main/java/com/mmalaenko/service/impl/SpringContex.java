@@ -1,6 +1,6 @@
 package com.mmalaenko.service.impl;
 
-import com.mmalaenko.utill.AppConfig;
+import com.mmalaenko.app.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class SpringContex {

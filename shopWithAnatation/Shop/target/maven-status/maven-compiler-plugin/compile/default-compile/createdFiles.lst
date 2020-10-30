@@ -1,5 +1,6 @@
 com\mmalaenko\service\OrderGoodService.class
 com\mmalaenko\servlet\ShopServlet.class
+com\mmalaenko\app\AppInitializer.class
 com\mmalaenko\service\OrderService.class
 com\mmalaenko\service\impl\OrderGoodServiceImpl.class
 com\mmalaenko\utill\DBConnector.class
@@ -12,12 +13,15 @@ com\mmalaenko\utill\DataBaseInitialize.class
 com\mmalaenko\model\Product.class
 com\mmalaenko\model\Product$ProductBuilder.class
 com\mmalaenko\repository\OrderGoodRepository.class
+com\mmalaenko\app\WebMvcConfig.class
 com\mmalaenko\security\LoginFilter.class
 com\mmalaenko\model\Order$OrderBuilder.class
 com\mmalaenko\servlet\CartServlet.class
+com\mmalaenko\app\AppContext.class
 com\mmalaenko\repository\impl\UserRepositoryImpl.class
 com\mmalaenko\repository\impl\OrderRepositoryImpl.class
 com\mmalaenko\service\impl\OrderServiceImpl.class
+com\mmalaenko\app\AppConfig.class
 com\mmalaenko\repository\ProductRepository.class
 com\mmalaenko\model\User$UserBuilder.class
 com\mmalaenko\model\User.class
@@ -28,5 +32,4 @@ com\mmalaenko\repository\impl\ProductRepositoryImpl.class
 com\mmalaenko\repository\UserRepository.class
 com\mmalaenko\mvcConfig\WebConfig.class
 com\mmalaenko\service\impl\ProductServiceImpl.class
-com\mmalaenko\utill\AppConfig.class
 com\mmalaenko\model\Order.class

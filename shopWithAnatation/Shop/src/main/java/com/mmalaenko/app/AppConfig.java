@@ -1,4 +1,4 @@
-package com.mmalaenko.utill;
+package com.mmalaenko.app;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
